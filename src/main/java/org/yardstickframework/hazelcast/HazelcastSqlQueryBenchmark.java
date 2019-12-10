@@ -14,16 +14,18 @@
 
 package org.yardstickframework.hazelcast;
 
-import com.hazelcast.query.*;
-import org.yardstickframework.*;
-import org.yardstickframework.hazelcast.querymodel.*;
-import org.yardstickframework.hazelcast.util.*;
+import com.hazelcast.query.impl.predicates.SqlPredicate;
+import org.yardstickframework.BenchmarkConfiguration;
+import org.yardstickframework.hazelcast.querymodel.Person;
+import org.yardstickframework.hazelcast.util.HazelcastBenchmarkRunnable;
+import org.yardstickframework.hazelcast.util.HazelcastBenchmarkUtils;
 
-import java.util.*;
-import java.util.concurrent.*;
-import java.util.concurrent.atomic.*;
+import java.util.Collection;
+import java.util.Map;
+import java.util.concurrent.ThreadLocalRandom;
+import java.util.concurrent.atomic.AtomicInteger;
 
-import static org.yardstickframework.BenchmarkUtils.*;
+import static org.yardstickframework.BenchmarkUtils.println;
 
 /**
  * Hazelcast benchmark that performs query operations.

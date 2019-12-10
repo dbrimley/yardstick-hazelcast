@@ -14,15 +14,15 @@
 
 package org.yardstickframework.hazelcast;
 
-import java.util.*;
-import java.util.concurrent.atomic.AtomicInteger;
-
-import com.hazelcast.core.TransactionalMap;
 import com.hazelcast.transaction.TransactionContext;
 import com.hazelcast.transaction.TransactionOptions;
+import com.hazelcast.transaction.TransactionalMap;
 import org.yardstickframework.BenchmarkConfiguration;
 import org.yardstickframework.hazelcast.util.HazelcastBenchmarkRunnable;
 import org.yardstickframework.hazelcast.util.HazelcastBenchmarkUtils;
+
+import java.util.Map;
+import java.util.concurrent.atomic.AtomicInteger;
 
 import static com.hazelcast.transaction.TransactionOptions.TransactionType.TWO_PHASE;
 import static org.yardstickframework.BenchmarkUtils.println;

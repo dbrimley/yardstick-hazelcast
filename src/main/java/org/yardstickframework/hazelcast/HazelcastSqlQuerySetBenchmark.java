@@ -14,13 +14,14 @@
 
 package org.yardstickframework.hazelcast;
 
-import com.hazelcast.query.SqlPredicate;
+import com.hazelcast.query.impl.predicates.SqlPredicate;
+import org.yardstickframework.BenchmarkConfiguration;
+import org.yardstickframework.hazelcast.querymodel.Person;
+
 import java.util.Collection;
 import java.util.Map;
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.concurrent.atomic.AtomicInteger;
-import org.yardstickframework.BenchmarkConfiguration;
-import org.yardstickframework.hazelcast.querymodel.Person;
 
 import static org.yardstickframework.BenchmarkUtils.println;
 

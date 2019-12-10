@@ -14,7 +14,6 @@
 
 package org.yardstickframework.hazelcast;
 
-import com.hazelcast.core.TransactionalMap;
 import com.hazelcast.transaction.TransactionContext;
 import com.hazelcast.transaction.TransactionOptions;
 import java.util.HashMap;
@@ -22,6 +21,8 @@ import java.util.Map;
 import java.util.Set;
 import java.util.TreeSet;
 import java.util.concurrent.atomic.AtomicInteger;
+
+import com.hazelcast.transaction.TransactionalMap;
 import org.yardstickframework.BenchmarkConfiguration;
 import org.yardstickframework.hazelcast.querymodel.Account;
 import org.yardstickframework.hazelcast.util.HazelcastBenchmarkRunnable;

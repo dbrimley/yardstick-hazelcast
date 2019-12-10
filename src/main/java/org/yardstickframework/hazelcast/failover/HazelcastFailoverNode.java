@@ -17,12 +17,13 @@
 
 package org.yardstickframework.hazelcast.failover;
 
-import com.hazelcast.core.IMap;
+import com.hazelcast.map.IMap;
+import org.yardstickframework.BenchmarkConfiguration;
+import org.yardstickframework.hazelcast.HazelcastNode;
+
 import java.lang.management.ManagementFactory;
 import java.lang.management.RuntimeMXBean;
 import java.util.List;
-import org.yardstickframework.BenchmarkConfiguration;
-import org.yardstickframework.hazelcast.HazelcastNode;
 
 import static org.yardstickframework.BenchmarkUtils.println;
 

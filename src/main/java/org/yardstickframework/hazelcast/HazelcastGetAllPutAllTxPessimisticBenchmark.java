@@ -14,9 +14,10 @@
 
 package org.yardstickframework.hazelcast;
 
-import com.hazelcast.core.TransactionalMap;
 import com.hazelcast.transaction.TransactionContext;
 import com.hazelcast.transaction.TransactionOptions;
+import com.hazelcast.transaction.TransactionalMap;
+
 import java.util.Map;
 import java.util.SortedSet;
 import java.util.TreeSet;
